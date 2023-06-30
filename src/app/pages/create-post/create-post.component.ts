@@ -19,7 +19,7 @@ export class CreatePostComponent {
   createPost() {
     this.service.addBlog(this.post)
       .subscribe(() => {
-        this.router.navigate(['/']);
+        this.router.navigate(['/blog']);
       });
   }
 }

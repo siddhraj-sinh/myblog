@@ -24,4 +24,7 @@ export class BlogComponent {
    navigateToPostDetails(id:any){
     this.router.navigate(['/post', id]);
    }
+   navigateToEditPost(id:any){
+    this.router.navigate([`/edit-post/${id}`])
+   }
 }
