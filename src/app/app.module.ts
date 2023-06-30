@@ -9,6 +9,9 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostDetailsComponent } from './pages/post-details/post-details.component';
+import { CreatePostComponent } from './pages/create-post/create-post.component';
+import { EditPostComponent } from './pages/edit-post/edit-post.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,12 +19,15 @@ import { PostDetailsComponent } from './pages/post-details/post-details.componen
     AboutComponent,
     BlogComponent,
     ContactComponent,
-    PostDetailsComponent
+    PostDetailsComponent,
+    CreatePostComponent,
+    EditPostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
