@@ -9,7 +9,11 @@ export class BlogServiceService {
   constructor(private http:HttpClient) { }
   url ="http://localhost:3000/blogs";
   getAllBlog():Observable<any[]>{
-   
     return this.http.get<any[]>(this.url);
+  }
+
+  getBlog(id:any):Observable<any>{
+   const url =`http://localhost:3000/blogs/${id}`;
+   return this.http.get<any>(url);
   }
 }

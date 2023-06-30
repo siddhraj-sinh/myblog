@@ -8,13 +8,15 @@ import { AboutComponent } from './pages/about/about.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PostDetailsComponent } from './pages/post-details/post-details.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    PostDetailsComponent
   ],
   imports: [
     BrowserModule,
